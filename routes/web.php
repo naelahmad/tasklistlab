@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome',compact('tasks'));
 });
 
-Route::post('task',function(Request $request){
+Route::post('tasks',function(Request $request){
 DB::table('tasks')->insert([
 'name'=>$request->name,
 'created_at'=>now(),

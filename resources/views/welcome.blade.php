@@ -16,11 +16,6 @@
 
 
 
-    <!-- Fonts -->
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
 
 
 
@@ -29,6 +24,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
+    
 
 
 
@@ -37,13 +33,17 @@
         body {
 
             font-family: 'Lato';
+            font-size:2em;
 
         }
 
         .fa-btn {
 
             margin-right: 6px;
-
+            font-size:2em;
+        }
+        button{
+            font-size:2em;
         }
 
     </style>
@@ -125,41 +125,21 @@ any form should have csrf_field()
                         <!-- Add Task Button -->
 
                         <div class="form-group">
-
                             <div class="col-sm-offset-3 col-sm-6">
-
                                 <button type="submit" class="btn btn-default">
-
                                     <i class="fa fa-btn fa-plus"></i>Add Task
-
                                 </button>
-
                             </div>
-
                         </div>
-
                     </form>
-
                 </div>
-
             </div>
-
-
-
             <!-- Current Tasks -->
-
                 <div class="panel panel-default">
-
                     <div class="panel-heading">
-
                         Current Tasks
-
                     </div>
-
-
-
                     <div class="panel-body">
-
                         <table class="table table-striped task-table">
                             <thead>
                                 <th>Task</th>
