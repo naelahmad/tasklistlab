@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 
 Route::get('/', function () {
     $tasks = DB::table('tasks')->get();
-    return view('welcome');
+    return view('welcome',compact('tasks'));
 });
 
 Route::post('task',function(Request $request){
