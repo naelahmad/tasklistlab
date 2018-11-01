@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function () {
+    $tasks = DB::table('tasks')->get();
     return view('welcome');
 });
 
@@ -22,5 +23,5 @@ DB::table('tasks')->insert([
 'created_at'=>now(),
 'updated_at'=>now()
 ]);
-return 'Done';
+return redirect('/');
 });

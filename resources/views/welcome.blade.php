@@ -161,99 +161,31 @@ any form should have csrf_field()
                     <div class="panel-body">
 
                         <table class="table table-striped task-table">
-
                             <thead>
-
                                 <th>Task</th>
-
                                 <th>&nbsp;</th>
-
                             </thead>
-
                             <tbody>
-
+                                    @foreach ($tasks as $task)
                                     <tr>
-
-                                        <td class="table-text"><div>Task 1</div></td>
-
-
-
-                                        <!-- Task Delete Button -->
-
-                                        <td>
-
-                                            <form action="#" method="POST">
-
-                                                <button type="submit" class="btn btn-danger">
-
-                                                    <i class="fa fa-btn fa-trash"></i>Delete
-
-                                                </button>
-
-                                            </form>
-
+                                        <td class="table-text">
+                                        <div>{{$task->name}}</div>
                                         </td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td class="table-text"><div>Task 2</div></td>
-
-
-
                                         <!-- Task Delete Button -->
-
                                         <td>
-
                                             <form action="#" method="POST">
-
                                                 <button type="submit" class="btn btn-danger">
-
                                                     <i class="fa fa-btn fa-trash"></i>Delete
-
                                                 </button>
-
                                             </form>
-
                                         </td>
-
                                     </tr>
-
-                                    <tr>
-
-                                        <td class="table-text"><div>Task 3</div></td>
-
-
-
-                                        <!-- Task Delete Button -->
-
-                                        <td>
-
-                                            <form action="#" method="POST">
-
-                                                <button type="submit" class="btn btn-danger">
-
-                                                    <i class="fa fa-btn fa-trash"></i>Delete
-
-                                                </button>
-
-                                            </form>
-
-                                        </td>
-
-                                    </tr>
-
+                                    @endforeach
                             </tbody>
-
                         </table>
-
                     </div>
-
                 </div>
-
         </div>
-
 </div>
 
     <!-- JavaScripts -->
