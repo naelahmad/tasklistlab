@@ -150,7 +150,9 @@ any form should have csrf_field()
                                         </td>
                                         <!-- Task Delete Button -->
                                         <td>
-                                            <form action="{{url('tasks')}}" method="POST">
+                                            <form action="{{url('tasks/'.$task->id)}}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
                                                 <button type="submit" class="btn btn-danger">
                                                     <i class="fa fa-btn fa-trash"></i>Delete
                                                 </button>

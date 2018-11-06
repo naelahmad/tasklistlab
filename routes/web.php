@@ -25,8 +25,8 @@ DB::table('tasks')->insert([
 ]);
 return redirect('/');
 });
-Route::post('tasks',function(Request $request){
-    $name = $request->name;
-    DB::table('tasks')->where('name', $name)->delete();
-return redirect('/');
+
+Route::delete('tasks/{id}',function($id){
+    DB::table('tasks')->where('id','=',$id)->delete();
+    return redirect ('/');
 });
