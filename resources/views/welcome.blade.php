@@ -40,10 +40,7 @@
         .fa-btn {
 
             margin-right: 6px;
-            font-size:2em;
-        }
-        button{
-            font-size:2em;
+
         }
 
     </style>
@@ -153,7 +150,7 @@ any form should have csrf_field()
                                         </td>
                                         <!-- Task Delete Button -->
                                         <td>
-                                            <form action="#" method="POST">
+                                            <form action="{{url('tasks')}}" method="POST">
                                                 <button type="submit" class="btn btn-danger">
                                                     <i class="fa fa-btn fa-trash"></i>Delete
                                                 </button>
