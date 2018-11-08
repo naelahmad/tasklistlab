@@ -33,6 +33,7 @@
         body {
 
             font-family: 'Lato';
+<<<<<<< HEAD
             font-size:2em;
 
         }
@@ -43,6 +44,15 @@
 
         }
 
+=======
+        }
+
+        .fa-btn {
+            margin-right: 6px;
+        }
+
+
+>>>>>>> f92cbe362a0056d3f57a1d9e79fba12719f8dfc7
     </style>
 
 </head>
@@ -150,9 +160,13 @@ any form should have csrf_field()
                                         </td>
                                         <!-- Task Delete Button -->
                                         <td>
+<<<<<<< HEAD
                                             <form action="{{url('tasks/'.$task->id)}}" method="POST">
                                             @csrf
                                             @method('DELETE')
+=======
+                                            <form action="#" method="POST">
+>>>>>>> f92cbe362a0056d3f57a1d9e79fba12719f8dfc7
                                                 <button type="submit" class="btn btn-danger">
                                                     <i class="fa fa-btn fa-trash"></i>Delete
                                                 </button>

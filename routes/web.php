@@ -24,9 +24,12 @@ DB::table('tasks')->insert([
 'updated_at'=>now()
 ]);
 return redirect('/');
+<<<<<<< HEAD
 });
 
 Route::delete('tasks/{id}',function($id){
     DB::table('tasks')->where('id','=',$id)->delete();
     return redirect ('/');
+=======
+>>>>>>> f92cbe362a0056d3f57a1d9e79fba12719f8dfc7
 });
