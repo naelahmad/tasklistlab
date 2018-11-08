@@ -12,24 +12,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    $tasks = DB::table('tasks')->get();
-    return view('welcome',compact('tasks'));
-});
+Route::get('/', 'TaskController@index') ;
 
-Route::post('tasks',function(Request $request){
-DB::table('tasks')->insert([
-'name'=>$request->name,
-'created_at'=>now(),
-'updated_at'=>now()
-]);
-return redirect('/');
-<<<<<<< HEAD
-});
+Route::post('tasks','TaskController@store');
 
-Route::delete('tasks/{id}',function($id){
-    DB::table('tasks')->where('id','=',$id)->delete();
-    return redirect ('/');
-=======
->>>>>>> f92cbe362a0056d3f57a1d9e79fba12719f8dfc7
-});
+Route::delete('tasks/{id}','TaskController@destroy');

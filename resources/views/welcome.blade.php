@@ -22,39 +22,20 @@
     <!-- Styles -->
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
-    
-
-
-
     <style>
 
         body {
-
             font-family: 'Lato';
-<<<<<<< HEAD
             font-size:2em;
-
         }
-
-        .fa-btn {
-
-            margin-right: 6px;
-
-        }
-
-=======
-        }
-
         .fa-btn {
             margin-right: 6px;
         }
-
-
->>>>>>> f92cbe362a0056d3f57a1d9e79fba12719f8dfc7
+        }
+        .fa-btn {
+            margin-right: 6px;
+        }
     </style>
-
 </head>
 
 <body id="app-layout">
@@ -160,13 +141,10 @@ any form should have csrf_field()
                                         </td>
                                         <!-- Task Delete Button -->
                                         <td>
-<<<<<<< HEAD
                                             <form action="{{url('tasks/'.$task->id)}}" method="POST">
                                             @csrf
                                             @method('DELETE')
-=======
                                             <form action="#" method="POST">
->>>>>>> f92cbe362a0056d3f57a1d9e79fba12719f8dfc7
                                                 <button type="submit" class="btn btn-danger">
                                                     <i class="fa fa-btn fa-trash"></i>Delete
                                                 </button>
@@ -187,7 +165,6 @@ any form should have csrf_field()
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script src="{{ elixir('js/app.js') }}"></script>
 
 </body>
 
